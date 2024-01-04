@@ -25,9 +25,16 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public void deleteById(int id) {
+
         entityManager.createQuery("DELETE FROM User WHERE id = :id")
                 .setParameter("id", id)
                 .executeUpdate();
+    }
+
+
+    @Override
+    public void updateUser(User user) {
+        entityManager.merge(user);
     }
 
     @Override

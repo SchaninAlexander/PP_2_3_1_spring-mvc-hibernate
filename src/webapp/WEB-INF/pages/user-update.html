@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Update User</title>
+    <title>Update</title>
 </head>
 <body>
-<form action="#" th:action="@{/user-update}" th:object="${user}" method="post">
-
-    <br/>
-    <label for="name">Name</label>
-    <input type="text" th:field="*{name}" id="name" placeholder="Name">
-    <br/>
-    <label for="age">Age</label>
-    <input type="number" th:field="*{age}" id="age" placeholder="Age">
-    <br/>
-    <label for="email">Email</label>
-    <input type="text" th:field="*{email}" id="email" placeholder="Email">
-    <br/>
-    <input type="submit" value="Update User">
+<h2>Update</h2>
+<form th:action="@{/user-update}" method="post">
+    <input type="hidden" name="id" th:value="${user.id}" />
+    <input type="text" name="name" th:value="${user.name}" />
+    <input type="number" name="age" th:value="${user.age}" />
+    <input type="text" name="email" th:value="${user.email}" />
+    <button type="submit" class="btn btn-primary">Update</button>
 </form>
 </body>
 </html>

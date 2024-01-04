@@ -9,6 +9,7 @@
         <entry key="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages/cars.html" value="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages" />
         <entry key="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages/user-create.html" value="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages" />
         <entry key="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages/user-info.html" value="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages" />
+        <entry key="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages/user-update.html" value="file://$PROJECT_DIR$/src/webapp/WEB-INF/pages" />
       </map>
     </option>
   </component>
